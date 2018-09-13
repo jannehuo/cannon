@@ -116,7 +116,19 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var matter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! matter-js */ \"./node_modules/matter-js/build/matter.js\");\n/* harmony import */ var matter_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(matter_js__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var matter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! matter-js */ \"./node_modules/matter-js/build/matter.js\");\n/* harmony import */ var matter_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(matter_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_canvas_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/canvas.js */ \"./src/modules/canvas.js\");\n\n\n\nObject(_modules_canvas_js__WEBPACK_IMPORTED_MODULE_1__[\"init\"])()\n\n//# sourceURL=webpack:///./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/modules/canvas.js":
+/*!*******************************!*\
+  !*** ./src/modules/canvas.js ***!
+  \*******************************/
+/*! exports provided: init */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"init\", function() { return init; });\nconst init = () => {\n  const c = document.createElement('canvas')\n  const ctx = c.getContext('2d')\n  c.width = window.innerWidth\n  c.height = window.innerHeight\n  document.body.appendChild(c);\n}\n\n\n\n//# sourceURL=webpack:///./src/modules/canvas.js?");
 
 /***/ })
 
